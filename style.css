@@ -1,0 +1,19 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #2D312E;
+    background-color: #F9F8F6;
+}
+
+.font-serif-title {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Efeito sutil de hover nos círculos e cards */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+}
+

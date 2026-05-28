@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giulliana Cestari - Currículo Docente</title>
+  <!-- Tailwind CSS para Estilização Moderna e Responsiva -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons para ícones modernos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Inter para legibilidade e Playfair Display para elegância sutil -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased min-h-screen flex flex-col">
+
+  <!-- Navegação / Cabeçalho -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-brand-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="font-serif-title text-xl font-bold text-brand-700 tracking-wide">Giulliana Cestari</a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-neutral-secondary">
+        <a href="#apresentacao" class="hover:text-brand-600 transition-colors">Sobre mim</a>
+        <a href="#valores" class="hover:text-brand-600 transition-colors">Valores</a>
+        <a href="#skills" class="hover:text-brand-600 transition-colors">Habilidades</a>
+        <a href="#experiencia" class="hover:text-brand-600 transition-colors">Trajetória</a>
+        <a href="#projetos" class="hover:text-brand-600 transition-colors">Projetos</a>
+      </nav>
+
+      <!-- Botão de Contato Rápido -->
+
+
+      <div class="hidden md:flex items-center gap-3">
+        <a href="mailto:dev.giullianacestari@gmail.com"
+          class="bg-brand-500 hover:bg-brand-600 text-white text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all font-medium">
+          Entrar em Contato
+        </a>
+
+        <button onclick="window.print()"
+          class="bg-white hover:bg-brand-50 text-brand-600 border border-brand-200 text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all font-medium">
+          Baixar currículo PDF
+        </button>
+      </div>
+
+      <!-- Botão Menu Mobile -->
+      <button id="mobile-menu-btn" class="md:hidden text-neutral-primary focus:outline-none" aria-label="Abrir Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Menu Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-brand-100 px-6 py-4 space-y-4">
+      <a href="#apresentacao" class="block text-neutral-secondary hover:text-brand-600 font-medium py-1">Quem Sou</a>
+      <a href="#valores" class="block text-neutral-secondary hover:text-brand-600 font-medium py-1">Valores</a>
+      <a href="#skills" class="block text-neutral-secondary hover:text-brand-600 font-medium py-1">Habilidades</a>
+      <a href="#experiencia" class="block text-neutral-secondary hover:text-brand-600 font-medium py-1">Trajetória</a>
+      <a href="#projetos" class="block text-neutral-secondary hover:text-brand-600 font-medium py-1">Projetos</a>
+      <a href="#contato" class="block text-brand-600 font-semibold py-1">Contatos</a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- SEÇÃO 1: APRESENTAÇÃO (HERO) -->
+    <section id="apresentacao" class="py-16 md:py-24 max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+        <!-- Foto e Contatos Rápidos -->
+        <div class="md:col-span-5 flex flex-col items-center text-center">
+          <div
+            class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-tr from-brand-300 to-brand-100 shadow-lg mb-8">
+            <!-- Imagem do Usuário (Substitua o src pela sua foto real) -->
+            <div
+              class="w-full h-full rounded-full overflow-hidden bg-brand-50 flex items-center justify-center border-4 border-white">
+              <img src="img/apresentacao.png" alt="Foto da Professora" class="w-full h-full object-cover"
+                onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600';">
+            </div>
+          </div>
+
+          <!-- Contatos rápidos abaixo da foto -->
+          <div id="contato" class="w-full bg-white p-6 rounded-2xl border border-brand-100 shadow-sm space-y-4">
+            <p class="text-xs font-semibold text-brand-600 uppercase tracking-wider mb-2">Canais de Contato</p>
+
+            <div
+              class="flex items-center space-x-3 text-neutral-secondary text-sm hover:text-brand-600 transition-colors">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span class="truncate">dev.giullianacestari@gmail.com</span>
+            </div>
+            <div
+              class="flex items-center space-x-3 text-neutral-secondary text-sm hover:text-brand-600 transition-colors">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span>(11) 94129-2622</span>
+            </div>
+            <div
+              class="flex items-center space-x-3 text-neutral-secondary text-sm hover:text-brand-600 transition-colors">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-400 flex-shrink-0"></i>
+              <span>Santo André, SP</span>
+            </div>
+            <div class="flex justify-center space-x-4 pt-2 border-t border-brand-50">
+              <a href="https://www.linkedin.com/in/giulliana-cestari-5baa56254/" target="_blank"
+                class="p-2 text-neutral-secondary hover:text-brand-500 hover:bg-brand-50 rounded-full transition-all"
+                aria-label="LinkedIn">
+                <i data-lucide="briefcase" class="w-5 h-5"></i>
+              </a>
+
+              <a href="https://github.com/giullianacestari" target="_blank"
+                class="p-2 text-neutral-secondary hover:text-brand-500 hover:bg-brand-50 rounded-full transition-all"
+                aria-label="GitHub">
+                <i data-lucide="code-2" class="w-5 h-5"></i>
+              </a>
+
+              <a href="https://wa.me/5511941292622" target="_blank"
+                class="p-2 text-neutral-secondary hover:text-brand-500 hover:bg-brand-50 rounded-full transition-all"
+                aria-label="WhatsApp">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breve Descrição / Bio -->
+        <div class="md:col-span-7 space-y-6 text-left">
+          <div
+            class="inline-flex items-center gap-2 bg-brand-100 text-brand-800 text-xs font-semibold px-3 py-1.5 rounded-full">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            <span>Educação Transformadora</span>
+          </div>
+
+          <h1 class="font-serif-title text-4xl md:text-5xl lg:text-6xl text-neutral-primary leading-tight font-light">
+            Olá, sou a <br><span class="font-semibold text-brand-600">Giulliana Cestari</span>!
+          </h1>
+
+          <p class="text-neutral-secondary text-base md:text-lg leading-relaxed">
+            Sou educadora dedicada ao desenvolvimento de estudantes da educação básica. Minha atuação une
+            duas grandes linguagens universais: a <strong>tecnologia</strong> (através do pensamento computacional, IAs,
+            robótica e programação) e a <strong>música</strong> (pelo piano, flauta e musicalização).
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row gap-4">
+            <a href="#projetos"
+              class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all text-sm">
+              <span>Ver Meus Projetos</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#skills"
+              class="inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-50 text-neutral-primary border border-brand-200 font-medium px-6 py-3 rounded-full transition-all text-sm">
+              <span>Conhecer Habilidades</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: MEUS VALORES (3 CÍRCULOS) -->
+    <section id="valores" class="py-20 bg-white border-y border-brand-100">
+
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <span class="text-xs font-bold text-brand-500 uppercase tracking-widest block mb-2">Pilares da minha vida</span>
+        <h2 class="font-serif-title text-3xl md:text-4xl text-neutral-primary font-semibold mb-12">Valores dos quais
+          não abro mão</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+
+          <!-- Valor 1 -->
+          <div class="flex flex-col items-center text-center group">
+            <div
+              class="w-40 h-40 rounded-full bg-brand-50 border-2 border-brand-200 flex flex-col items-center justify-center p-6 shadow-sm hover-lift group-hover:border-brand-400 group-hover:bg-brand-100/50 transition-all">
+              <i data-lucide="lightbulb" class="w-8 h-8 text-brand-500 mb-2"></i>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-lg">Propósito</h3>
+              <p class="text-xs text-neutral-secondary mt-1 hover:text-brand-500 hover:underline"><a
+                  href="https://www.bibliaonline.com.br/acf/ec/3/1">Eclesiastes 3:1</a></p>
+            </div>
+            <p class="mt-4 text-sm text-neutral-secondary leading-relaxed max-w-xs">
+              Transformar conhecimento em impacto real, carregando intencionalidade, significado e
+              direção.
+            </p>
+          </div>
+
+          <!-- Valor 2 -->
+          <div class="flex flex-col items-center text-center group">
+            <div
+              class="w-40 h-40 rounded-full bg-brand-50 border-2 border-brand-200 flex flex-col items-center justify-center p-6 shadow-sm hover-lift group-hover:border-brand-400 group-hover:bg-brand-100/50 transition-all">
+
+              <i data-lucide="heart" class="w-8 h-8 text-brand-500 mb-2"></i>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-lg">Amor</h3>
+              <p class="text-xs text-neutral-secondary mt-1 hover:text-brand-500 hover:underline"><a
+                  href="https://www.bibliaonline.com.br/acf/rm/12/10">Romanos 12:10</a></p>
+            </div>
+            <p class="mt-4 text-sm text-neutral-secondary leading-relaxed max-w-xs">
+              Enxergar o estudante em sua totalidade, acolhendo a
+              individualidade de cada um com cuidado.
+            </p>
+          </div>
+
+          <!-- Valor 3 -->
+          <div class="flex flex-col items-center text-center group">
+            <div
+              class="w-40 h-40 rounded-full bg-brand-50 border-2 border-brand-200 flex flex-col items-center justify-center p-6 shadow-sm hover-lift group-hover:border-brand-400 group-hover:bg-brand-100/50 transition-all">
+              <i data-lucide="shield-check" class="w-8 h-8 text-brand-500 mb-2"></i>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-lg">Excelência</h3>
+              <p class="text-xs text-neutral-secondary mt-1 hover:text-brand-500 hover:underline"><a
+                  href="https://www.bibliaonline.com.br/acf/dn/6/3">Daniel 6:3</a></p>
+            </div>
+            <p class="mt-4 text-sm text-neutral-secondary leading-relaxed max-w-xs">
+              Construir com dedicação e qualidade, cuidando
+              da missão que foi confiada às minhas mãos.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: HARD SKILLS (CATEGORIAS) & SOFT SKILLS -->
+    <section id="skills" class="py-20 max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brand-500 uppercase tracking-widest block mb-2">Conhecimento Técnico e
+          Pedagógico</span>
+        <h2 class="font-serif-title text-3xl md:text-4xl text-neutral-primary font-semibold">Minhas competências</h2>
+        <p class="text-neutral-secondary mt-2">Minhas "hard skills" reúnem um equilíbrio entre a lógica das ciências de
+          dados e a harmonia da educação musical.</p>
+      </div>
+
+      <!-- Grid de Hard Skills -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+        <!-- Card Programação e Robótica -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-100 shadow-sm hover-lift">
+          <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="cpu" class="w-5 h-5 text-brand-500"></i>
+          </div>
+          <h3 class="font-serif-title font-semibold text-lg text-neutral-primary mb-4">Programação & Robótica</h3>
+          <ul class="space-y-2 text-sm text-neutral-secondary">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>BNCC de
+              Computação</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Scratch</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>HTML & CSS
+            </li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>SASS</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              Bootstrap</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              JavaScript</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Python</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>GitHub</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Tinkercad
+            </li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              Arduino Cloud</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>MBlock</li>
+          </ul>
+        </div>
+
+        <!-- Card Design e UX -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-100 shadow-sm hover-lift">
+          <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="palette" class="w-5 h-5 text-brand-500"></i>
+          </div>
+          <h3 class="font-serif-title font-semibold text-lg text-neutral-primary mb-4">Prototipação & UX</h3>
+          <ul class="space-y-2 text-sm text-neutral-secondary">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Figma
+            </li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>CorelDraw
+            </li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Canva
+            </li>
+          </ul>
+        </div>
+
+
+
+
+        <!-- Card Música -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-100 shadow-sm hover-lift">
+          <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="music" class="w-5 h-5 text-brand-500"></i>
+          </div>
+          <h3 class="font-serif-title font-semibold text-lg text-neutral-primary mb-4">Música</h3>
+          <ul class="space-y-2 text-sm text-neutral-secondary">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Piano erudito
+            </li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Flauta doce
+            </li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Musicalização
+              Infantil</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Canto Coral
+            </li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>História da
+              Música</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Percepção &
+              Rítmica</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              Estruturação Musical</li>
+          </ul>
+        </div>
+
+        <!-- Card Gestão -->
+        <div class="bg-white p-6 rounded-2xl border border-brand-100 shadow-sm hover-lift">
+          <div class="w-10 h-10 bg-brand-50 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="briefcase" class="w-5 h-5 text-brand-500"></i>
+          </div>
+          <h3 class="font-serif-title font-semibold text-lg text-neutral-primary mb-4">Gestão de Projetos</h3>
+          <ul class="space-y-2 text-sm text-neutral-secondary">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>ClickUp</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Slack</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Google
+              Workspace</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Microsoft
+              Office 365</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>Notion</li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+
+      <!-- Soft Skills & Perfil Comportamental -->
+      <div class="bg-gradient-to-r from-brand-50 to-brand-100/50 rounded-2xl p-8 md:p-10 border border-brand-150">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-4 space-y-3">
+            <div class="inline-block bg-brand-200 text-brand-800 text-xs px-3 py-1 rounded-full font-medium">Perfil
+              Comportamental DISC</div>
+            <h3 class="font-serif-title text-2xl md:text-3xl font-bold text-neutral-primary">Perfil CI</h3>
+            <p class="text-sm text-neutral-secondary leading-relaxed">
+              Esta combinação garante que minhas práticas pedagógicas sejam organizadas e estruturadas <strong>
+                (Conformidade)</strong>,
+              ao mesmo tempo que se mantêm envolventes, comunicativas e acolhedoras para o ambiente escolar
+              <strong>(Influência)</strong>.
+            </p>
+          </div>
+
+          <div class="lg:col-span-8">
+            <h4 class="text-xs font-bold text-brand-600 uppercase tracking-wider mb-6">Atitudes e Habilidades
+              Interpessoais (Soft Skills)</h4>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <!-- Soft skill item -->
+              <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-brand-100/50 shadow-sm">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h5 class="font-semibold text-neutral-primary text-sm">Proativa</h5>
+                  <p class="text-xs text-neutral-secondary mt-1">Busco antecipar soluções problemas no dia a dia.</p>
+                </div>
+              </div>
+              <!-- Soft skill item -->
+              <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-brand-100/50 shadow-sm">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h5 class="font-semibold text-neutral-primary text-sm">Organizada</h5>
+                  <p class="text-xs text-neutral-secondary mt-1">Gosto de planos de aula bem estruturados.</p>
+                </div>
+              </div>
+              <!-- Soft skill item -->
+              <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-brand-100/50 shadow-sm">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h5 class="font-semibold text-neutral-primary text-sm">Comunicativa</h5>
+                  <p class="text-xs text-neutral-secondary mt-1">Adapto a linguagem da aula à faixa etária do meu aluno.
+                  </p>
+                </div>
+              </div>
+              <!-- Soft skill item -->
+              <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-brand-100/50 shadow-sm">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h5 class="font-semibold text-neutral-primary text-sm">Eficiente</h5>
+                  <p class="text-xs text-neutral-secondary mt-1">Procuro soluções para otimizar tempo e recursos.</p>
+                </div>
+              </div>
+              <!-- Soft skill item -->
+              <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-brand-100/50 shadow-sm">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h5 class="font-semibold text-neutral-primary text-sm">Analítica</h5>
+                  <p class="text-xs text-neutral-secondary mt-1">Analiso o contexto para criar aulas mais assertivas.
+                  </p>
+                </div>
+              </div>
+              <!-- Soft skill item -->
+              <div class="flex items-start space-x-3 bg-white p-4 rounded-xl border border-brand-100/50 shadow-sm">
+                <i data-lucide="check-circle" class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h5 class="font-semibold text-neutral-primary text-sm">Escuta Ativa</h5>
+                  <p class="text-xs text-neutral-secondary mt-1">Foco nas dores e anseios do estudante.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: TRAJETÓRIA (EXPERIÊNCIAS E FORMAÇÕES) -->
+    <section id="experiencia" class="py-20 bg-white border-y border-brand-100">
+      <div class="max-w-6xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+          <!-- Coluna de Formação Acadêmica -->
+          <div>
+            <div class="inline-flex items-center gap-2 mb-4">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-brand-500"></i>
+              <h3 class="font-serif-title text-2xl font-bold text-neutral-primary">Minha Formação</h3>
+            </div>
+            <p class="text-sm text-neutral-secondary mb-8">Base teórica sólida que habilita a intersecção de tecnologia,
+              publicidade e música.</p>
+
+            <div class="relative pl-6 border-l border-brand-200 space-y-8">
+              <!-- Formação 1 -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-500 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2023 - 2024</span>
+                <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Graduação — Análise e
+                  Desenvolvimento
+                  de Sistemas</h4>
+                <p class="text-xs text-neutral-secondary font-medium">UNICID (Universidade Cidade de São Paulo)</p>
+              </div>
+              <!-- Formação 2 -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-300 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2021 - 2022</span>
+                <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Graduação — Produção
+                  Publicitária</h4>
+                <p class="text-xs text-neutral-secondary font-medium">UNIGRAN (Centro Universitário da Grande Dourados)
+                </p>
+              </div>
+              <!-- Formação 3 -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-200 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2014 - 2018</span>
+                <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Formação Musical com
+                  especialização em Piano
+                </h4>
+                <p class="text-xs text-neutral-secondary font-medium">FASCS (Fundação das Artes de São Caetano do Sul)
+                </p>
+              </div>
+              <!-- Formação 4 -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-100 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2013 - 2014</span>
+                <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Iniciação Musical com
+                  ênfase em Flautas
+                  Doce e Traversal</h4>
+                <p class="text-xs text-neutral-secondary font-medium">FASCS (Fundação das Artes de São Caetano do Sul)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna de Experiências Profissionais -->
+          <div>
+            <div class="inline-flex items-center gap-2 mb-4">
+              <i data-lucide="history" class="w-5 h-5 text-brand-500"></i>
+              <h3 class="font-serif-title text-2xl font-bold text-neutral-primary">Experiência Profissional</h3>
+            </div>
+            <p class="text-sm text-neutral-secondary mb-8">Trajetória marcada pelo ensino ativo, instrução de
+              tecnologias e atuações no setor de comunicação.</p>
+
+            <div class="relative pl-6 border-l border-brand-200 space-y-8">
+
+              <!-- Exp Alura -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-200 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2023 -
+                  Presente</span>
+                <button onclick="toggleExperienciasAlura()"
+                  class="flex items-center gap-1.5 font-serif-title font-semibold text-neutral-primary text-lg mt-2 hover:text-brand-600 text-left transition-colors">
+                  <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Ensino de Computação
+                  </h4> <br>
+                  <i data-lucide="chevron-down" id="exp-musica-icon" class="w-4 h-4 transition-transform"></i>
+                </button>
+                <p class="text-xs text-neutral-secondary font-medium">Start by Alura</p>
+
+                <div id="exp-alura-detalhes"
+                  class="hidden mt-3 space-y-3 pl-2 border-l-2 border-dashed border-brand-200 text-sm text-neutral-secondary">
+                  <div>
+                    <p class="font-medium text-neutral-primary">Formadora de Docentes (2026 - Presente)</p>
+                    <p class="text-xs">* Elaboração de <strong>materiais pedagógicos</strong> de apoio ao docente, como
+                      formações assíncronas, guias e manuais de implementação da BNCC de Computação.
+                      <br>
+                      * Condução de <strong>formações síncronas presenciais</strong> para professores da rede estadual
+                      de São
+                      Paulo.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-neutral-primary">Instrutora de Tecnologias (2025 - Presente)</p>
+                    <p class="text-xs">
+                      * Desenvolvimento de <strong>unidades curriculares</strong> e roteiros pedagógicos. Ensino de
+                      tecnologias educacionais e letramento digital voltados à implementação da BNCC, com
+                      ênfase em IoT, Desenvolvimento Front-End,
+                      Inteligência Artificial, Cultura Digital, e Robótica.
+                      <br>
+
+                      * Elaboração de <strong>avaliações formativas e somativas</strong> para uso interno e externo em
+                      competições, como
+                      OBI (Olimpíada Brasileira de Informática), Maratona Tech e Agrinho.
+
+                      <br>
+
+                      * Coautoria em documento curricular do <strong>Itinerário Formativo de Aprofundamento
+                        (IFA)</strong>, com foco nos conteúdos de Programação, desenvolvido para a Secretaria de
+                      Educação do Paraná.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-neutral-primary">Assistente de Conteúdo (2024 - 2025)</p>
+                    <p class="text-xs">* Produção de <strong>materiais didáticos</strong> e suporte técnico em
+                      ambientes de aprendizagem
+                      digital.
+                      <br>* Produção de <strong>avaliações somativas e formativas</strong> relacionadas a unidades
+                      educacionais e
+                      maratonas de âmbito nacional.
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-neutral-primary">Estágio de Conteúdo (2023 - 2024)</p>
+                    <p class="text-xs">Suporte na produção de materiais didáticos e suporte técnico em ambientes de
+                      aprendizagem digital.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Exp Música -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-150 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2007 -
+                  Presente</span>
+                <button onclick="toggleExperienciasMusica()"
+                  class="flex items-center gap-1.5 font-serif-title font-semibold text-neutral-primary text-lg mt-2 hover:text-brand-600 text-left transition-colors">
+                  <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Trajetória Artística
+                    Musical</h4> <br>
+                  <i data-lucide="chevron-down" id="exp-musica-icon" class="w-4 h-4 transition-transform"></i>
+                </button>
+                <p class="text-xs text-neutral-secondary font-medium">Sala São Paulo, FASCS, Colégio Singular Júnior,
+                  OFESB e AG Music.</p>
+                <div id="exp-musica-detalhes"
+                  class="hidden mt-3 space-y-3 pl-2 border-l-2 border-dashed border-brand-200 text-sm text-neutral-secondary">
+                  <div>
+                    <p class="font-medium text-neutral-primary">Prática de Orquestra (2022 - Presente)</p>
+                    <p class="text-xs">Atuação voluntária como pianista acompanhante da <strong>OFESB</strong>
+                      (Orquestra
+                      Filarmônica Evangélica de São Bernardo do Campo).</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-neutral-primary">Apresentações & Música de Câmara (2016 - 2019)</p>
+                    <p class="text-xs">Atuação musical ativa na <strong>FASCS</strong> e na <strong>Sala São
+                        Paulo</strong> em conjunto com o músico Paulo
+                      Paschoal.</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-neutral-primary">Pianista Acompanhante (2016 -
+                      2019)</p>
+                    <p class="text-xs">Atuação na <strong>AG Music</strong>, participando de eventos corporativos,
+                      debutantes e casamentos.</p>
+                  </div>
+
+                  <div>
+                    <p class="font-medium text-neutral-primary">Estagiária em Música (2016 -
+                      2019)</p>
+                    <p class="text-xs">Atuação no <strong>Colégio Singular Júnior</strong>, desenvolvendo projetos de
+                      musicalização, flauta doce e canto coral para Ensino Fundamental.</p>
+                  </div>
+
+                  <div>
+                    <p class="font-medium text-neutral-primary">Aluna de Piano (2007 - 2019)</p>
+                    <p class="text-xs">Professores: Roberta Montanheiro, Cláudia Siste, Ulisses de Castro, Sara Chong.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Exp Religioso -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-200 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2025 -
+                  Presente</span>
+                <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Ensino Bíblico</h4>
+                <p class="text-xs text-neutral-secondary font-medium">Assembléia de Deus Ministério do Belém</p>
+                <p class="text-sm text-neutral-secondary mt-1">Atuação voluntária como professora de estudo bíblico para
+                  Educação Infantil.</p>
+              </div>
+
+              <!-- Exp Telepoint -->
+              <div class="relative">
+                <span
+                  class="absolute -left-[31px] top-1.5 w-4.5 h-4.5 rounded-full bg-brand-200 border-4 border-white"></span>
+                <span class="text-xs font-semibold text-brand-600 bg-brand-50 px-2 py-1 rounded-md">2020 - 2023</span>
+                <h4 class="font-serif-title font-semibold text-neutral-primary text-lg mt-2">Analista de Marketing</h4>
+                <p class="text-xs text-neutral-secondary font-medium">Telepoint Engenharia Civil e Elétrica</p>
+                <p class="text-sm text-neutral-secondary mt-1">Criação de campanhas de marketing integrado, identidade
+                  visual corporativa e gestão de fluxos de comunicação no Google Workspace.</p>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5: MEUS PROJETOS (VITRINE DE CARDS E MODAIS INTERATIVOS) -->
+    <section id="projetos" class="py-20 max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brand-500 uppercase tracking-widest block mb-2">Casos práticos</span>
+        <h2 class="font-serif-title text-3xl md:text-4xl text-neutral-primary font-semibold">Meus projetos</h2>
+        <p class="text-neutral-secondary mt-2">Clique em "Ver Detalhes" para ler a proposta pedagógica completa,
+          metodologias ativas aplicadas e impacto no aprendizado.</p>
+      </div>
+
+      <!-- Grid de Projetos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card Projeto 1 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-brand-100 shadow-sm hover-lift flex flex-col h-full">
+          <div class="h-48 overflow-hidden relative bg-brand-50 flex items-center justify-center">
+            <!-- Imagem do Projeto 1 -->
+            <img src="img/artigo.png" alt="Imagem do Projeto de Pensamento Computacional"
+              class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+              Tecnologia</div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-xl mb-1">Entre Algoritmos e
+                Aprendizagens: Desafios e possibilidades na avaliação do Pensamento Computacional na Educação Básica
+              </h3>
+              <p class="text-xs text-brand-600 uppercase font-medium tracking-wider mb-3">BNCC de Computação</p>
+              <p class="text-neutral-secondary text-sm line-clamp-3">
+                Coautoria em artigo publicado na XI edição do CONEDU (Congresso Nacional de Educação).
+              </p>
+            </div>
+            <div class="pt-6">
+              <button onclick="openModal('modal-projeto-1')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-medium px-4 py-2.5 rounded-xl transition-all text-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Projeto 4 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-brand-100 shadow-sm hover-lift flex flex-col h-full">
+          <div class="h-48 overflow-hidden relative bg-brand-50 flex items-center justify-center">
+            <img src="img/artigo.png" alt="Imagem do Projeto de Pensamento Computacional"
+              class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+              IA & Tecnologia</div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-xl mb-1">Projeto Integrador:
+                Inteligência Artificial e
+                Tecnologias
+              </h3>
+              <p class="text-xs text-brand-600 uppercase font-medium tracking-wider mb-3">BNCC de Computação</p>
+              <p class="text-neutral-secondary text-sm line">
+                Coautoria em caderno pedagógico desenvolvido para o Itinerário Formativo de Aprofundamento da rede
+                estadual do Paraná.
+              </p>
+            </div>
+            <div class="pt-6">
+              <button onclick="openModal('modal-projeto-4')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-medium px-4 py-2.5 rounded-xl transition-all text-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Projeto 2 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-brand-100 shadow-sm hover-lift flex flex-col h-full">
+          <div class="h-48 overflow-hidden relative bg-brand-50 flex items-center justify-center">
+            <!-- Imagem do Projeto 2 -->
+            <img src="img/blog tech.png" alt="Imagem do Projeto de Musicalização" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+              Tecnologia & Música</div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-xl mb-1">Blog - O Verso da Partitura
+              </h3>
+              <p class="text-xs text-brand-600 uppercase font-medium tracking-wider mb-3">Computação & História da
+                Música</p>
+              <p class="text-neutral-secondary text-sm line">
+                Projeto interdisciplinar focado no desenvolvimento de um blog responsivo que explora curiosidades sobre
+                a história da música.
+              </p>
+            </div>
+            <div class="pt-6">
+              <button onclick="openModal('modal-projeto-2')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-medium px-4 py-2.5 rounded-xl transition-all text-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Projeto 3 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-brand-100 shadow-sm hover-lift flex flex-col h-full">
+          <div class="h-48 overflow-hidden relative bg-brand-50 flex items-center justify-center">
+            <!-- Imagem do Projeto 3 -->
+            <img src="img/sensor de vaga.png" alt="Imagem do Projeto de Robótica" class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+              Robótica</div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-xl mb-1">Sensores de Vaga PCD</h3>
+              <p class="text-xs text-brand-600 uppercase font-medium tracking-wider mb-3">Simulação Eletrônica &
+                Prototipagem</p>
+              <p class="text-neutral-secondary text-sm line-clamp-3">
+                Projeto de robótica voltado ao desenvolvimento de um sensor com foco em acessibilidade e inclusão.
+              </p>
+            </div>
+            <div class="pt-6">
+              <button onclick="openModal('modal-projeto-3')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-medium px-4 py-2.5 rounded-xl transition-all text-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Projeto EXTRATOR DE PALAVRAS-CHAVE
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-brand-100 shadow-sm hover-lift flex flex-col h-full">
+          <div class="h-48 overflow-hidden relative bg-brand-50 flex items-center justify-center">
+            <img src="img/extrator.png" alt="Imagem do Projeto de Pensamento Computacional"
+              class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+              IA & Tecnologia</div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-xl mb-1">Extrator de Palavras-Chave
+              </h3>
+              <p class="text-xs text-brand-600 uppercase font-medium tracking-wider mb-3">Computação</p>
+              <p class="text-neutral-secondary text-sm line-clamp-3">
+                Projeto em JavaScript focado na reflexão sobre limitações dos algoritmos frente à Inteligência
+                Artificial.
+              </p>
+            </div>
+            <div class="pt-6">
+              <button onclick="openModal('modal-projeto-4')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-medium px-4 py-2.5 rounded-xl transition-all text-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div> -->
+
+
+
+        <!-- Card Projeto 5 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-brand-100 shadow-sm hover-lift flex flex-col h-full">
+          <div class="h-48 overflow-hidden relative bg-brand-50 flex items-center justify-center">
+            <!-- Imagem do Projeto 5 -->
+            <img src="img/copa.png" alt="Imagem do Projeto de Pensamento Computacional"
+              class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+              Tecnologia</div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-xl mb-1">Jogo - Copa do Mundo
+              </h3>
+              <p class="text-xs text-brand-600 uppercase font-medium tracking-wider mb-3">Pensamento Computacional</p>
+              <p class="text-neutral-secondary text-sm line-clamp-3">
+                Projeto de lógica de programação que explora funções, listas e reuso de código.
+              </p>
+            </div>
+            <div class="pt-6">
+              <button onclick="openModal('modal-projeto-5')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-medium px-4 py-2.5 rounded-xl transition-all text-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Projeto 6 -->
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-brand-100 shadow-sm hover-lift flex flex-col h-full">
+          <div class="h-48 overflow-hidden relative bg-brand-50 flex items-center justify-center">
+            <!-- Imagem do Projeto 6  -->
+            <img src="img/planner.png" alt="Imagem do Projeto de Pensamento Computacional"
+              class="w-full h-full object-cover">
+            <div class="absolute top-4 left-4 bg-brand-500 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
+              Tecnologia & Música</div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow justify-between">
+            <div>
+              <h3 class="font-serif-title font-semibold text-neutral-primary text-xl mb-1">Sinalizadores de Luz e Som
+              </h3>
+              <p class="text-xs text-brand-600 uppercase font-medium tracking-wider mb-3">Simulação eletrônica & Teoria
+                Musical</p>
+              <p class="text-neutral-secondary text-sm line-clamp-3">
+                Projeto interdisciplinar de robótica e música voltado à criação de circuitos sonoros e luminosos com
+                Arduino e Tinkercad.
+              </p>
+            </div>
+            <div class="pt-6">
+              <button onclick="openModal('modal-projeto-6')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-brand-50 hover:bg-brand-100 text-brand-700 font-medium px-4 py-2.5 rounded-xl transition-all text-sm">
+                <span>Ver Detalhes</span>
+                <i data-lucide="eye" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Minimalista -->
+  <footer class="bg-neutral-primary text-white/80 py-12 border-t border-neutral-700">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-center md:text-left">
+        <p class="font-serif-title text-lg font-bold text-brand-200 tracking-wide">Giulliana Cestari</p>
+        <p class="text-xs text-white/50 mt-1">Professora de Tecnologia e Música.</p>
+      </div>
+
+      <div class="flex space-x-6 text-sm text-white/60">
+        <a href="#apresentacao" class="hover:text-brand-300 transition-colors">Início</a>
+        <a href="#skills" class="hover:text-brand-300 transition-colors">Competências</a>
+        <a href="#projetos" class="hover:text-brand-300 transition-colors">Portfólio</a>
+      </div>
+
+      <p class="text-xs text-white/40">&copy; 2026. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+  <!-- ================== MODAL PROJETO 1 ================== -->
+  <div id="modal-projeto-1" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title"
+    role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <!-- Overlay do Fundo -->
+      <div class="fixed inset-0 bg-neutral-primary/60 backdrop-blur-sm transition-opacity" aria-hidden="true"
+        onclick="closeModal('modal-projeto-1')"></div>
+
+      <!-- Centralizador do Modal -->
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <!-- Caixa de Conteúdo do Modal -->
+      <div
+        class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <!-- Imagem Banner do Modal -->
+        <div class="h-60 bg-brand-50 relative">
+          <img src="img/artigo.jpg" alt="Capa" class="w-full h-full object-cover">
+          <button onclick="closeModal('modal-projeto-1')"
+            class="absolute top-4 right-4 bg-white/90 text-neutral-primary hover:bg-white rounded-full p-2 transition-all shadow">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <!-- Detalhes do Projeto -->
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">BNCC DE
+              COMPUTAÇÃO</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Fundamental
+              II</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Médio</span>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-neutral-primary mb-4" id="modal-title">Entre Algoritmos e
+            Aprendizagens: Desafios e possibilidades na avaliação do Pensamento Computacional na Educação Básica</h3>
+
+          <div class="prose max-w-none text-neutral-secondary text-sm leading-relaxed space-y-4">
+            <p class="font-medium text-neutral-primary">
+              Neste artigo, compartilho um pouco das reflexões e experiências que vivenciamos ao pensar a avaliação do
+              Pensamento Computacional na Educação Básica após a inserção da Computação na BNCC. Ao longo da escrita,
+              discutimos como avaliar habilidades computacionais vai muito além de verificar se um código funciona ou
+              não.
+            </p>
+            <p>
+              Também apresentamos parte da trajetória construída na Start by Alura, mostrando como as avaliações
+              evoluíram de atividades mais focadas em fixação de conteúdo para propostas com maior intencionalidade
+              pedagógica, critérios psicométricos e alinhamento às habilidades previstas pela BNCC.
+            </p>
+            <p>
+              O trabalho reforça a importância de avaliações mais formativas, acessíveis e conectadas ao desenvolvimento
+              real dos estudantes, considerando não apenas aspectos técnicos, mas também criatividade, resolução de
+              problemas e pensamento crítico na educação digital.
+            </p>
+
+            <div class="bg-brand-50 p-4 rounded-xl border border-brand-100 space-y-2 mt-4">
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">Acesse ao artigo completo:</h4>
+              <a href="https://editorarealize.com.br/editora/anais/conedu/2025/TRABALHO_COMPLETO_EV214_ID20919_TB9658_30102025145731.pdf"
+                class="text-xs text-brand-500 hover:text-brand-600 underline">Editora Realize - XI CONEDU </a>
+            </div>
+          </div>
+
+          <!-- Botões Ação -->
+          <div class="mt-8 flex justify-end">
+            <button onclick="closeModal('modal-projeto-1')"
+              class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-2.5 rounded-full shadow-sm text-sm transition-colors">
+              Fechar Visualização
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================== MODAL PROJETO 4 ================== -->
+  <div id="modal-projeto-4" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title"
+    role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <!-- Overlay do Fundo -->
+      <div class="fixed inset-0 bg-neutral-primary/60 backdrop-blur-sm transition-opacity" aria-hidden="true"
+        onclick="closeModal('modal-projeto-4')"></div>
+
+      <!-- Centralizador do Modal -->
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <!-- Caixa de Conteúdo do Modal -->
+      <div
+        class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <!-- Imagem Banner do Modal -->
+        <div class="h-60 bg-brand-50 relative">
+          <img src="img/projeto-ifa.png" alt="Capa" class="w-full h-full object-cover">
+          <button onclick="closeModal('modal-projeto-4')"
+            class="absolute top-4 right-4 bg-white/90 text-neutral-primary hover:bg-white rounded-full p-2 transition-all shadow">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <!-- Detalhes do Projeto -->
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">IA</span>
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Tecnologia</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Médio</span>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-neutral-primary mb-4" id="modal-title">Projeto Integrador:
+            Inteligência Artificial e Tecnologias</h3>
+
+          <div class="prose max-w-none text-neutral-secondary text-sm leading-relaxed space-y-4">
+            <p class="font-medium text-neutral-primary">
+              Neste material pedagógico, atuei como coautora responsável pela construção dos conteúdos de programação do
+              Itinerário Formativo de Aprofundamento (IFA) da rede estadual do Paraná. O trabalho foi desenvolvido com
+              foco em aproximar os estudantes de práticas contemporâneas da Computação, conectando tecnologia,
+              pensamento crítico e aplicação no mundo do trabalho.
+            </p>
+            <p>
+              Os conteúdos abordam temas como UX (User Experience), acessibilidade web, análise de dados com planilhas,
+              uso crítico de Inteligência Artificial e desenvolvimento de soluções digitais voltadas para problemas
+              reais. A proposta pedagógica busca estimular não apenas habilidades técnicas, mas também reflexão,
+              autonomia e compreensão ética sobre o uso das tecnologias no cotidiano.
+            </p>
+            <p>
+              Além da construção dos projetos e atividades, o material foi pensado para promover uma aprendizagem
+              prática e contextualizada, incentivando os estudantes a explorarem tecnologia de forma criativa, acessível
+              e alinhada às demandas atuais do mercado e da sociedade digital.
+            </p>
+            <div class="bg-brand-50 p-4 rounded-xl border border-brand-100 space-y-2 mt-4">
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">Acesse o material completo:</h4>
+              <a class="text-xs hover:underline text-brand-500"
+                href="https://acervodigital.educacao.pr.gov.br/pages/download.php?direct=1&noattach=true&ref=56584&ext=pdf&k=d908018c5f">
+                <strong>Projeto Integrador: Inteligência Artificial e Tecnologias</strong>
+              </a>
+            </div>
+          </div>
+
+          <!-- Botões Ação -->
+          <div class="mt-8 flex justify-end">
+            <button onclick="closeModal('modal-projeto-4')"
+              class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-2.5 rounded-full shadow-sm text-sm transition-colors">
+              Fechar Visualização
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================== MODAL PROJETO 2 ================== -->
+  <div id="modal-projeto-2" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title"
+    role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 bg-neutral-primary/60 backdrop-blur-sm transition-opacity" aria-hidden="true"
+        onclick="closeModal('modal-projeto-2')"></div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <div
+        class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <div class="h-60 bg-brand-50 relative">
+          <img src="img/projeto-blog.png" alt="Capa" class="w-full h-full object-cover">
+          <button onclick="closeModal('modal-projeto-2')"
+            class="absolute top-4 right-4 bg-white/90 text-neutral-primary hover:bg-white rounded-full p-2 transition-all shadow">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Música</span>
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Tecnologia</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Médio</span>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-neutral-primary mb-4" id="modal-title">Blog - O Verso da
+            Partitura</h3>
+
+          <div class="prose max-w-none text-neutral-secondary text-sm leading-relaxed space-y-4">
+            <p class="font-medium text-neutral-primary">
+              Este projeto interdisciplinar propõe a criação de um blog responsivo sobre curiosidades da história da
+              música, unindo desenvolvimento front-end, design digital e produção de conteúdo. Ao longo do projeto, são
+              explorados temas históricos e culturais da música enquanto o estudante constrói uma experiência web
+              interativa e visualmente organizad
+            </p>
+            <p>
+              Durante o desenvolvimento do código, também são trabalhados conceitos fundamentais de UX (User Experience)
+              e acessibilidade web, incentivando a criação de interfaces mais intuitivas, inclusivas e responsivas.
+              Entre os tópicos abordados estão organização visual, legibilidade, contraste, estrutura semântica em HTML
+              e adaptação para diferentes dispositivos.
+            </p>
+            <p>
+              Além de praticar HTML, CSS e JavaScript, o projeto estimula o olhar crítico para a experiência do usuário,
+              mostrando como tecnologia, comunicação e música podem se conectar na construção de produtos digitais mais
+              acessíveis e significativos.
+            </p>
+
+            <div class="bg-brand-50 p-4 rounded-xl border border-brand-100 space-y-2 mt-4">
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">PROJETO:</h4>
+              <a class="text-xs hover:underline text-brand-500" href="https://giullianacestari.github.io/blog-musica/">
+                <strong>O Verso da Partitura</strong>
+              </a>
+
+
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">BNCC de Computação:</h4>
+              <p class="text-xs"><strong>(EM13CO15)</strong> Analisar a interação entre usuários e artefatos
+                computacionais, abordando aspectos da experiência do usuário e promovendo reflexão sobre a qualidade do
+                uso dos artefatos nas esferas do trabalho, do lazer e do estudo.
+                <br><br>
+
+                <strong>(EM13CO22)</strong> Produzir e publicar conteúdo como textos, imagens, áudios, vídeos e suas
+                associações, bem como ferramentas para sua integração, organização e apresentação, utilizando diferentes
+                mídias digitais.
+
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 flex justify-end">
+            <button onclick="closeModal('modal-projeto-2')"
+              class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-2.5 rounded-full shadow-sm text-sm transition-colors">
+              Fechar Visualização
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- ================== MODAL PROJETO 3 ================== -->
+  <div id="modal-projeto-3" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title"
+    role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 bg-neutral-primary/60 backdrop-blur-sm transition-opacity" aria-hidden="true"
+        onclick="closeModal('modal-projeto-3')"></div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <div
+        class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <div class="h-60 bg-brand-50 relative">
+          <img src="img/projeto-vagapcd.png" alt="Capa" class="w-full h-full object-cover">
+          <button onclick="closeModal('modal-projeto-3')"
+            class="absolute top-4 right-4 bg-white/90 text-neutral-primary hover:bg-white rounded-full p-2 transition-all shadow">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Robótica</span>
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Programação</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Fundamental
+              II</span>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-neutral-primary mb-4" id="modal-title">Sensores de Vaga
+            PCD</h3>
+
+          <div class="prose max-w-none text-neutral-secondary text-sm leading-relaxed space-y-4">
+            <p class="font-medium text-neutral-primary">
+              Neste projeto, os estudantes mergulham no universo da robótica e da programação ao desenvolverem um sensor
+              de estacionamento inteligente com foco em acessibilidade e inclusão. Ao longo das aulas, são explorados
+              conceitos de automação, eletrônica e lógica computacional por meio da criação de uma vaga PCD interativa.
+            </p>
+            <p>
+              Durante o percurso, os estudantes utilizam ferramentas como o Tinkercad e o mBlock para simular circuitos,
+              integrar componentes eletrônicos e programar o comportamento do sistema utilizando programação em blocos.
+              Além do desenvolvimento técnico, o projeto também incentiva a prototipagem física e o pensamento criativo
+              na construção da maquete final.
+            </p>
+            <p>
+              A proposta conecta tecnologia e impacto social ao estimular soluções acessíveis e funcionais para o
+              cotidiano. Durante o desenvolvimento, também são trabalhados conceitos como reuso de código, decomposição
+              de problemas, testes de funcionamento e aprimoramento do design do protótipo, aproximando os estudantes de
+              práticas reais da computação e da engenharia.
+            </p>
+
+            <div class="bg-brand-50 p-4 rounded-xl border border-brand-100 space-y-2 mt-4">
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">BNCC de Computação:</h4>
+              <p class="text-xs"><strong>(EF07CO03)</strong> Construir soluções computacionais de problemas de
+                diferentes áreas do conhecimento, de forma individual e colaborativa, selecionando as estruturas de
+                dados e técnicas adequadas, aperfeiçoando e articulando saberes escolares.
+                <br><br>
+
+
+                <strong>(EF07CO05)</strong> Criar algoritmos fazendo uso da decomposição e do reúso no processo de
+                solução, de forma
+                colaborativa e cooperativa, e automatizá-los usando uma linguagem de programação.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 flex justify-end">
+            <button onclick="closeModal('modal-projeto-3')"
+              class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-2.5 rounded-full shadow-sm text-sm transition-colors">
+              Fechar Visualização
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================== MODAL PROJETO EXTRATOR  ================== -->
+  <!-- 
+  <div id="modal-projeto-4" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title"
+    role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <!-- Overlay do Fundo 
+      <div class="fixed inset-0 bg-neutral-primary/60 backdrop-blur-sm transition-opacity" aria-hidden="true"
+        onclick="closeModal('modal-projeto-4')"></div>
+
+      <!-- Centralizador do Modal 
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <!-- Caixa de Conteúdo do Modal 
+      <div
+        class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <!-- Imagem Banner do Modal 
+        <div class="h-60 bg-brand-50 relative">
+          <img src="img/projeto-extrator.png" alt="Capa" class="w-full h-full object-cover">
+          <button onclick="closeModal('modal-projeto-4')"
+            class="absolute top-4 right-4 bg-white/90 text-neutral-primary hover:bg-white rounded-full p-2 transition-all shadow">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <!-- Detalhes do Projeto 
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Desenvolvimento
+              web</span>
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Front-End</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Médio</span>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-neutral-primary mb-4" id="modal-title">Extrator de
+            Palavras-Chave</h3>
+
+          <div class="prose max-w-none text-neutral-secondary text-sm leading-relaxed space-y-4">
+            <p class="font-medium text-neutral-primary">
+              Neste projeto, os estudantes exploram conceitos de manipulação de texto, algoritmos de busca e expressões
+              regulares por meio do desenvolvimento de um extrator de palavras-chave utilizando JavaScript. O projeto
+              propõe uma experiência prática de programação voltada para análise de dados textuais e automação de
+              processos simples de identificação de termos relevantes.
+            </p>
+            <p>
+              Ao longo das aulas, são trabalhados conceitos fundamentais do Front-End e da lógica de programação, como
+              funções, laços de repetição, estruturas condicionais, separação e ordenação de palavras, além de técnicas
+              de contagem e organização de informações em texto. O estudante também aprende a estruturar algoritmos
+              capazes de interpretar padrões e transformar dados brutos em informações úteis.
+            </p>
+            <p>
+              Além da construção técnica do projeto, o projeto promove reflexões sobre os limites dos algoritmos
+              tradicionais quando comparados às Inteligências Artificiais generativas. Dessa forma, analisa-se como
+              diferentes tecnologias processam linguagem natural, desenvolvendo pensamento crítico sobre automação,
+              interpretação de texto e uso de IA na computação atual.
+            </p>
+            <div class="bg-brand-50 p-4 rounded-xl border border-brand-100 space-y-2 mt-4">
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">PROJETO:</h4>
+              <a class="text-xs hover:underline text-brand-500"
+                href="https://giullianacestari.github.io/extrator-de-palavras-chave/">
+                <strong>Extrator de Palavras-Chave</strong>
+              </a>
+
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">BNCC de Computação:</h4>
+              <p class="text-xs">
+                <strong>(EM13CO05)</strong> Identificar os limites da Computação para diferenciar o que pode ou não ser
+                automatizado, buscando uma compreensão mais ampla dos limites dos processos mentais envolvidos na
+                resolução de problemas.
+              </p>
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">Itinerário Formativo:</h4>
+
+              <p class="text-xs">
+                <strong>(EMIFFTP01)</strong> Investigar, analisar e resolver problemas do cotidiano pessoal, da escola e
+                do trabalho,
+                considerando dados e informações disponíveis em diferentes mídias, planejando, desenvolvendo e avaliando
+                as atividades realizadas, compreendendo a proposição de soluções para o problema identificado, a
+                descrição de proposições lógicas por meio de fluxogramas, a aplicação de variáveis e constantes, a
+                aplicação de operadores lógicos, de operadores aritméticos, de laços de repetição, de decisão e de
+                condição.
+              </p>
+            </div>
+          </div>
+
+          <!-- Botões Ação 
+          <div class="mt-8 flex justify-end">
+            <button onclick="closeModal('modal-projeto-4')"
+              class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-2.5 rounded-full shadow-sm text-sm transition-colors">
+              Fechar Visualização
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+
+
+  <!-- ================== MODAL PROJETO 5 ================== -->
+  <div id="modal-projeto-5" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title"
+    role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <!-- Overlay do Fundo -->
+      <div class="fixed inset-0 bg-neutral-primary/60 backdrop-blur-sm transition-opacity" aria-hidden="true"
+        onclick="closeModal('modal-projeto-5')"></div>
+
+      <!-- Centralizador do Modal -->
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <!-- Caixa de Conteúdo do Modal -->
+      <div
+        class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <!-- Imagem Banner do Modal -->
+        <div class="h-60 bg-brand-50 relative">
+          <img src="img/projeto-copa.png" alt="Capa" class="w-full h-full object-cover">
+          <button onclick="closeModal('modal-projeto-5')"
+            class="absolute top-4 right-4 bg-white/90 text-neutral-primary hover:bg-white rounded-full p-2 transition-all shadow">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <!-- Detalhes do Projeto -->
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Tecnologia</span>
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Programação em
+              blocos</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Fundamental
+              II</span>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-neutral-primary mb-4" id="modal-title">Jogo - Copa do
+            Mundo</h3>
+
+          <div class="prose max-w-none text-neutral-secondary text-sm leading-relaxed space-y-4">
+            <p class="font-medium text-neutral-primary">
+              Neste projeto, os estudantes desenvolvem um jogo de campeonato entre seleções, em que diferentes países
+              disputam três rodadas definidas pelo próprio jogador. A partir dos placares inseridos, o sistema calcula
+              automaticamente a pontuação das equipes com base em regras inspiradas em campeonatos oficiais, exibindo ao
+              final o vencedor da disputa ou situações de empate.
+            </p>
+            <p>
+              Ao longo das aulas, são trabalhados conceitos fundamentais de programação e pensamento computacional, como
+              decomposição de problemas, reuso de código, funções com parâmetros, variáveis, listas e laços de repetição
+              com índice. O desenvolvimento acontece de forma prática e contextualizada, permitindo que os estudantes
+              compreendam como sistemas computacionais utilizam lógica e organização de dados para automatizar decisões.
+            </p>
+            <p>
+              Além da construção técnica do jogo, a proposta também estimula o raciocínio lógico, a interpretação de
+              regras e a criação de soluções mais eficientes e reutilizáveis. O projeto aproxima os estudantes de
+              práticas reais do desenvolvimento de software ao mostrar como funções e estruturas de programação podem
+              simplificar processos complexos dentro de um sistema interativo.
+            </p>
+            <div class="bg-brand-50 p-4 rounded-xl border border-brand-100 space-y-2 mt-4">
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">PROJETO:</h4>
+              <a class="text-xs hover:underline text-brand-500" href="https://scratch.mit.edu/projects/1326015360/">
+                <strong>Copa do Mundo</strong>
+              </a>
+
+
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">BNCC de Computação:</h4>
+              <p class="text-xs"><strong>(EF07CO03)</strong> Construir soluções computacionais de problemas de
+                diferentes áreas do
+                conhecimento, de forma individual e colaborativa, selecionando as estruturas de dados e técnicas
+                adequadas, aperfeiçoando e articulando saberes escolares. <br><br>
+
+                <strong>(EF07CO05)</strong> Criar algoritmos fazendo uso da decomposição e do reúso no processo de
+                solução, de forma
+                colaborativa e cooperativa, e automatizá-los usando uma linguagem de programação.
+              </p>
+            </div>
+          </div>
+
+          <!-- Botões Ação -->
+          <div class="mt-8 flex justify-end">
+            <button onclick="closeModal('modal-projeto-5')"
+              class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-2.5 rounded-full shadow-sm text-sm transition-colors">
+              Fechar Visualização
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================== MODAL PROJETO 6 ================== -->
+  <div id="modal-projeto-6" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title"
+    role="dialog" aria-modal="true">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <!-- Overlay do Fundo -->
+      <div class="fixed inset-0 bg-neutral-primary/60 backdrop-blur-sm transition-opacity" aria-hidden="true"
+        onclick="closeModal('modal-projeto-6')"></div>
+
+      <!-- Centralizador do Modal -->
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <!-- Caixa de Conteúdo do Modal -->
+      <div
+        class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+        <!-- Imagem Banner do Modal -->
+        <div class="h-60 bg-brand-50 relative">
+          <img src="img/projeto-sinalizador.png" alt="Capa" class="w-full h-full object-cover">
+          <button onclick="closeModal('modal-projeto-6')"
+            class="absolute top-4 right-4 bg-white/90 text-neutral-primary hover:bg-white rounded-full p-2 transition-all shadow">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <!-- Detalhes do Projeto -->
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Simulação</span>
+            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-semibold">Robótica</span>
+            <span class="bg-slate-100 text-slate-800 text-xs px-2.5 py-1 rounded-full font-semibold">Ensino Fundamental
+              II</span>
+          </div>
+          <h3 class="font-serif-title text-2xl font-bold text-neutral-primary mb-4" id="modal-title">Simulando sinais
+            com luz e som</h3>
+
+          <div class="prose max-w-none text-neutral-secondary text-sm leading-relaxed space-y-4">
+            <p class="font-medium text-neutral-primary">
+              Nesta unidade, os estudantes mergulham no universo da simulação eletrônica e da automação, explorando como
+              sons e luzes podem ser utilizados como formas de comunicação em sistemas tecnológicos. Utilizando a
+              plataforma Tinkercad e programação em blocos com Arduino, o percurso conecta tecnologia, criatividade e
+              conceitos introdutórios de música.
+            </p>
+            <p>
+              Ao longo das aulas, são desenvolvidos dois projetos principais: um sinalizador de garagem com LEDs
+              piscantes e um sistema de espera telefônica com melodias sonoras. Durante a construção dos circuitos, os
+              estudantes aprendem conceitos fundamentais de eletrônica, como corrente elétrica, resistores, LEDs e
+              buzzer piezoelétrico, enquanto exploram também noções musicais como notas, intervalos, tons e semitons na
+              criação das sequências sonoras.
+            </p>
+            <p>
+              A proposta introduz conceitos de entradas analógicas por meio do uso de potenciômetros para controle de
+              volume e intensidade, aproximando os estudantes da lógica utilizada em dispositivos eletrônicos reais.
+              Mais do que montar circuitos, a unidade incentiva a criação de soluções interativas e expressivas,
+              integrando programação, música e resolução de problemas tecnológicos.
+            </p>
+            <div class="bg-brand-50 p-4 rounded-xl border border-brand-100 space-y-2 mt-4">
+
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">PROJETOS:</h4>
+              <a class="text-xs hover:underline text-brand-500"
+                href="https://www.tinkercad.com/things/kOsjqqPF1v9-sinalizador-de-garagem?sharecode=kZGLxPOAEUSn9IMaRVj75VFpuZ5g85nXp2bPnhhNn3Q">
+                <strong>Sinalizador de garagem</strong>
+              </a>
+              <br>
+              <a class="text-xs hover:underline text-brand-500"
+                href="https://www.tinkercad.com/things/jK3EuFNK7Hw-espera-telefonica?sharecode=SD_GsImjri_7N3tr0GFd-FrQ0pdKNMJ7w2EbGar5duY">
+                <strong>Espera telefônica</strong>
+              </a>
+              <h4 class="font-serif-title font-semibold text-brand-800 text-sm">BNCC de Computação:</h4>
+              <p class="text-xs"><strong>(EF06C002)</strong> Elaborar algoritmos que envolvam instruções sequenciais, de
+                repetição e de
+                seleção usando uma linguagem de programação.
+                <br><br>
+                <strong>(EF06C003)</strong> Descrever com precisão a solução de um problema, construindo o programa que
+                implementa a
+                solução descrita.
+
+              </p>
+            </div>
+          </div>
+
+          <!-- Botões Ação -->
+          <div class="mt-8 flex justify-end">
+            <button onclick="closeModal('modal-projeto-6')"
+              class="bg-brand-500 hover:bg-brand-600 text-white font-medium px-6 py-2.5 rounded-full shadow-sm text-sm transition-colors">
+              Fechar Visualização
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
